@@ -10,3 +10,4 @@ function mostraPalavraChave() {
 const palavra=texto.split(" ");
 
 campoResultado.textContent=palavras;
+}
