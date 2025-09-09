@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html lang="pt-BT">
+const botaomostraPalavras = document.querySelector("#botao-palavrachave");
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extrator de Palavras-Chave</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+botaomostraPalavras.addEventListener("click", mostraPalavrasChave);
 
-<body>
-    <div class="container">
-        <h1>Extrator de palavras-chave</h1>
-        <textarea id="entrada-de-texto" placeholder="Digite ou cole seu texto aqui..."></textarea>
-        <button id="botao-palavrachave">Extrair</button>
-        <div id="resultado-palavrachave"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
+function mostraPalavraChave() {
+    const texto = document.querySelector("#entrada-de-texto").value;
 
-</html>
+    const campoResultado = document.querySelector("#resultado-palavrachave")
+
+const palavra=texto.split(" ");
+
+campoResultado.textContent=palavras;
