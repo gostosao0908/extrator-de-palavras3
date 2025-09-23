@@ -16,3 +16,5 @@ function preocessatexto(texto) {
       let palavras = texto.split(/\P[L]+/U);
       return palavras;
       }
+
+      
