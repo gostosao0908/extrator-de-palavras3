@@ -12,6 +12,12 @@ campoResultado.textContent = palavras.join(", ");
 
 function preocessatexto(texto) {
     let palavras = texto.split(/\P[L]+/U);
+    for(let i in palavras){
+        palavras{i}=palavras(i).toLeweCase();
+    }
+
+    palavras=tirapalavrasruins(palavras);
+
 const frequencia=contafrequencia (palavras) ;
 let ordenadas=Object.keys(frequencia).sort(ordenpalavra);
 
@@ -39,5 +45,11 @@ for (let i of palavras) {
              }
          }
     }
-     return palavras;
+     return frequencias;
 )
+
+function tirapalavrasruins(palavras) {
+    const oalavras_ruins=new setInterval(["para", "uma", "nós"]);
+    const palavrasboas={;
+        for (let palavras of palavras) ()
+}
